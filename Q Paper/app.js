@@ -165,7 +165,7 @@ function renderPaperDetails(college, department, academicYear, subject) {
     <div class="paper-item">
       <h5>${p.exam} (${p.yearMonth})</h5>
       <a href="${p.fileData}" download="${p.fileName}">⬇️ Download PDF</a>
-      <button onclick="deletePaper(${p.id}, '${college}', '${department}', '${academicYear}', '${subject}')" style="margin-top:10px;background:#dc3545;">🗑 Delete</button>
+
     </div>
   `).join('');
   papersList.innerHTML = listHtml;
@@ -175,4 +175,5 @@ function deletePaper(id, college, department, academicYear, subject) {
   papers = papers.filter((p) => p.id !== id);
   savePapers(papers);
   renderPaperDetails(college, department, academicYear, subject);
+
 }
