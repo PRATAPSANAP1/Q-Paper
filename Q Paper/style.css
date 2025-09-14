@@ -229,4 +229,74 @@ footer {
   color: #fff;
   margin-top: auto;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+@media (max-width: 768px) {
+  /* General */
+  body {
+    font-size: 14px;
+  }
+
+  /* Header */
+  header {
+    padding: 1rem 0.5rem;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 1.5rem;
+    margin: 15px auto;
+  }
+  
+  .welcome-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .welcome-section p {
+    font-size: 1rem;
+  }
+  
+  /* Forms */
+  form {
+    gap: 10px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="file"],
+  select,
+  button,
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  
+  /* Breadcrumbs */
+  .breadcrumbs {
+    font-size: 0.9rem;
+  }
+  
+  /* List Items */
+  .list-container h3,
+  .list-container h4 {
+    font-size: 1.1rem;
+  }
+
+  .paper-item {
+    padding: 10px;
+  }
+
+  .paper-item h5 {
+    font-size: 0.9rem;
+  }
 }
