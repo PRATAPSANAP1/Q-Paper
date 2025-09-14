@@ -1,0 +1,232 @@
+/* General Body and Layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* A softer gray background */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #1a73e8; /* A darker, more professional blue */
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  color: #c4e3ff;
+  transform: translateY(-2px);
+}
+
+/* Main Content Container */
+main {
+  padding: 3rem;
+  max-width: 900px;
+  width: 90%;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+  flex: 1;
+}
+
+.welcome-section {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.welcome-section h2 {
+  color: #1a73e8;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-section p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Forms and Inputs */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adds space between form elements */
+}
+
+label {
+  font-weight: 600;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
+}
+
+/* Buttons */
+button,
+.btn {
+  background-color: #1a73e8;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: auto;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #155bb5;
+  transform: translateY(-2px);
+}
+
+#message {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Breadcrumbs and Lists */
+.breadcrumbs {
+  margin-bottom: 25px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #1a73e8;
+  margin-right: 5px;
+  transition: color 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+  color: #155bb5;
+}
+
+.breadcrumbs span {
+  color: #bbb;
+  margin: 0 5px;
+}
+
+.list-container {
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.list-container:hover {
+  background-color: #f7f7f7;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.list-container h3,
+.list-container h4 {
+  margin: 0;
+  color: #1a73e8;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.list-container h3:hover,
+.list-container h4:hover {
+  text-decoration: underline;
+}
+
+/* Paper Items */
+.paper-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+}
+
+.paper-item h5 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.paper-item a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.paper-item a:hover {
+  color: #155bb5;
+}
+
+.paper-item button {
+  background: #dc3545;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.paper-item button:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: auto;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}

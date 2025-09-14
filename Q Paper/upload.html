@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Question Paper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Upload Question Paper</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="upload.html">Upload Papers</a>
+      <a href="view.html">View Papers</a>
+    </nav>
+  </header>
+  <main>
+    <form id="uploadForm">
+      <label for="college">College Name:</label>
+      <input type="text" id="college" name="college" required />
+      <label for="department">Department Name:</label>
+      <input type="text" id="department" name="department" required />
+      <label for="academicYear">Academic Year:</label>
+      <select id="academicYear" name="academicYear" required>
+        <option value="">Select Year</option>
+        <option value="FY">FY</option>
+        <option value="SY">SY</option>
+        <option value="TY">TY</option>
+        <option value="BTECH">BTECH</option>
+      </select>
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required />
+      <label for="exam">Exam Name:</label>
+      <input type="text" id="exam" name="exam" required />
+      <label for="yearMonth">Year & Month:</label>
+      <input type="text" id="yearMonth" name="yearMonth" placeholder="e.g., 2024-May" required />
+      <label for="file">Choose Question Paper PDF:</label>
+      <input type="file" id="file" name="file" accept="application/pdf" required />
+      <button type="submit">Upload</button>
+    </form>
+    <div id="message"></div>
+  </main>
+  <footer>
+    <p>© 2024 Team BuildZen</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
